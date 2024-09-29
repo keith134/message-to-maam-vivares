@@ -1,0 +1,108 @@
+/* Basic Styling and Font Settings */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Header Styling */
+header h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    margin: 0;
+    color: #444;
+}
+
+header h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #666;
+}
+
+header p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    color: #777;
+}
+
+/* Button Styling */
+button {
+    background-color: #6e8efb;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin: 20px 0;
+}
+
+button:hover {
+    background-color: #a777e3;
+}
+
+/* Poem Section Styling */
+.poem {
+    font-family: 'Raleway', sans-serif;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: none;
+    text-align: left;
+    max-height: 60vh;
+    overflow-y: auto; /* Allows scrolling if poem is too long */
+}
+
+.poem h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    color: #555;
+}
+
+.poem p {
+    margin: 10px 0;
+    line-height: 1.6;
+    font-size: 1rem;
+    color: #444;
+}
+
+/* Hidden and Floating Animation */
+.hidden {
+    display: none;
+}
+
+.floating {
+    display: block;
+    animation: float 2s ease-in-out;
+}
+
+/* Animation Keyframes */
+@keyframes float {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

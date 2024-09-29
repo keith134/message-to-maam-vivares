@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribute to Ma'am Rolyn | Del Rosario</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Section Del Rosario</h1>
+            <h2>Tribute to Ma'am Rolyn Ann C. Vivares</h2>
+            <p>In honor of a wonderful teacher on Teachers' Day</p>
+        </header>
+        
+        <div class="content">
+            <button id="message-btn">Show Poem</button>
+            <div id="poem" class="poem hidden">
+                <h3>A Tribute to Ma'am Rolyn</h3>
+                <p>
+                    In the halls of wisdom, where dreams take flight,<br>
+                    There stands a beacon, a guiding light.<br>
+                    Ma'am Rolyn, with grace and a heart so true,<br>
+                    You shape our minds, you lead us through.
+                </p>
+                <p>
+                    With every lesson, in every smile,<br>
+                    You go that extra, caring mile.<br>
+                    In Del Rosario, we are one,<br>
+                    Learning, growing, under your sun.
+                </p>
+                <p>
+                    You teach us more than words can say,<br>
+                    You show us kindness, every day.<br>
+                    Through highs and lows, you stand with pride,<br>
+                    Our mentor, friend, and constant guide.
+                </p>
+                <p>
+                    For every question, you have the key,<br>
+                    Unlocking doors for us to see.<br>
+                    With patience, wisdom, and a gentle tone,<br>
+                    You make us feel we're not alone.
+                </p>
+                <p>
+                    Today we honor all you do,<br>
+                    And give our heartfelt thanks to you.<br>
+                    For the knowledge shared, the love you show,<br>
+                    For helping all of us to grow.
+                </p>
+                <p>
+                    Ma'am Rolyn, you're more than just a name,<br>
+                    You're the spark, the joy, the flame.<br>
+                    In Del Rosario, we celebrate,<br>
+                    The teacher who makes our lives so great.
+                </p>
+                <p>
+                    Happy Teachers' Day, with love sincere,<br>
+                    From all your students who hold you dear.<br>
+                    May joy and blessings come your way,<br>
+                    For all the light you bring each day.
+                </p>
+            </div>
+
+            <div id="message" class="hidden">
+                <h3>Message for Ma'am Rolyn</h3>
+                <p>Dear Ma'am Rolyn, thank you for being such an inspiring teacher. Your dedication and kindness make a huge difference in our lives!</p>
+            </div>
+
+            <button id="show-message-btn" class="hidden">Show Message</button>
+        </div>
+
+        <!-- Audio Player -->
+        <audio id="background-audio" src="juan karlos - Through the Years (From Lolo and the Kid) Official Music Video.mp3"></audio>
+    </div>
+
+    <script>
+        const messageBtn = document.getElementById('message-btn');
+        const poem = document.getElementById('poem');
+        const message = document.getElementById('message');
+        const audio = document.getElementById('background-audio');
+        const showMessageBtn = document.getElementById('show-message-btn');
+
+        messageBtn.addEventListener('click', () => {
+            poem.classList.toggle('hidden');
+            poem.classList.toggle('floating');
+            audio.play();  // Play the audio when the button is clicked
+            showMessageBtn.classList.remove('hidden'); // Show the message button
+        });
+
+        showMessageBtn.addEventListener('click', () => {
+            message.classList.toggle('hidden'); // Show or hide the message
+        });
+    </script>
+</body>
+</html>
